@@ -62,6 +62,15 @@ public class MainActivity extends AppCompatActivity {
         scoreTeamA = scoreTeamA + 1;
         displayForTeamA(scoreTeamA);
     }
+    /**
+     * Decrease the score for Team A by 1 point.
+     */
+    public void minusOneForTeamA(View v) {
+        if(scoreTeamA > 0) {
+            scoreTeamA = scoreTeamA - 1;
+            displayForTeamA(scoreTeamA);
+        }
+    }
 
     /**
      * Increase the score for Team A by 2 points.
@@ -91,6 +100,16 @@ public class MainActivity extends AppCompatActivity {
     public void addOneForTeamB(View v) {
         scoreTeamB = scoreTeamB + 1;
         displayForTeamB(scoreTeamB);
+    }
+    /**
+     * Decrease the score for Team B by 1 point.
+     */
+    public void minusOneForTeamB(View v) {
+        if (scoreTeamB > 0) {
+            scoreTeamB = scoreTeamB - 1;
+            displayForTeamB(scoreTeamB);
+        }
+
     }
 
     /**
